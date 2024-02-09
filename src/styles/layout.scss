@@ -1,0 +1,61 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  .sidebar {
+    padding: 30px;
+    border-right: 1px solid #d4d6e0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .user {
+    margin-bottom: 47px;
+    .name {
+      color: #000;
+      font-family: Open Sans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    .email {
+      color: #9ea1b1;
+      font-family: Open Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  .exit {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 14px;
+      text-decoration: none;
+      color: #000;
+      font-family: Open Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      &.active{    
+        color: orangered;
+    }
+    }
+  }
+}
+.exit{
+  padding: 14px;
+}
